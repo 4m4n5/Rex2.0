@@ -13,7 +13,7 @@
   },
   "author": "aman",
   "scripts": {
-    "start": "node app.js"
+    "start": "node bin/www"
   },
   "engines": {
     "node": "0.10.x"
