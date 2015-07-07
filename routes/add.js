@@ -1,12 +1,11 @@
 var express = require('express');
 var router = express.Router();
-var website_url = 'http://localhost:3000/';
 
 // Requiring Mongo Client
 var mongo = require('mongodb').MongoClient;
 var assert = require('assert');
 
-var url = 'mongodb://localhost:27017/testRex2';
+var url = 'mongodb://aman:thermo999@ds053251.mongolab.com:53251/rxcahnge';
 
 /* GET users listing. */
 router.post('/', function(req, res) {

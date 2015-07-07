@@ -5,7 +5,7 @@ var router = express.Router();
 var mongo = require('mongodb').MongoClient;
 var assert = require('assert');
 
-var url = 'mongodb://localhost:27017/testRex2';
+var url = 'mongodb://aman:thermo999@ds053251.mongolab.com:53251/rxcahnge';
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
