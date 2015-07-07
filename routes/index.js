@@ -17,17 +17,6 @@ router.get('/', function(req, res, next) {
         rooms: data,
       });
     });
-    // Rooms.insert({
-    //   RoomNo: "B319",
-    //   Issue: "",
-    //   Preference: "",
-    //   Contact: {
-    //     Email: "",
-    //     Mobile: ""
-    //   }
-    // }, function() {
-    //   // Do Something
-    // });
   });
 });
 

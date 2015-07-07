@@ -1,7 +1,60 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
   for room in rooms
     p #{room.RoomNo}
+    p #{room.Issue}
+    p #{room.Preference}
+    p #{room.Email}
+    p #{room.Mobile}
+
+  | <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js">  </script>
+  |  <script>
+  |    $(document).ready(function(){
+  |      var room_no, issue, preference, email, mobile;
+  |      $("#submit").click(function(){
+  |       room_no=$("#room_no").val();
+  |       issue=$("#issue").val();
+  |       preference =$("#preference").val();
+  |       email =$("#email").val();
+  |       mobile =$("#mobile").val();
+  |       $.post("http://localhost:3000/add",{ room_no: room_no, issue: issue, preference: preference, email: email, mobile: mobile }, function(data){
+  |         if(data==='done')
+  |            {
+  |              alert("login success");
+  |            }
+  |        });
+  |      });
+  |    });
+  |  </script>
+
+  input(
+    type="TEXT"
+    id="room_no"
+    size="20"
+    )
+  input(
+    type="TEXT"
+    id="issue"
+    size="20"
+    )
+  input(
+    type="TEXT"
+    id="preference"
+    size="20"
+    )
+  input(
+    type="TEXT"
+    id="email"
+    size="20"
+    )
+  input(
+    type="TEXT"
+    id="mobile"
+    size="20"
+    )
+  input(
+    type="button"
+    id="submit"
+    value="Submit"
+    )
