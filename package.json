@@ -14,12 +14,5 @@
   "author": "aman",
   "scripts": {
     "start": "node ./bin/www"
-  },
-  "engines": {
-    "node": "0.10.x"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/amanthedorkknight/rex2.0"
   }
 }
